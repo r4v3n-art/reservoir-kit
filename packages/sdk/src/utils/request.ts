@@ -9,6 +9,7 @@ export function request(config: AxiosRequestConfig = {}) {
   const headers = {
     'Content-Type': 'application/json',
     'x-rkc-version': version,
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'
   } as any as AxiosRequestHeaders
   if (client?.apiKey) {
     headers['x-api-key'] = client.apiKey
